@@ -1,0 +1,48 @@
+<section id="home-header">
+    <div class="container">
+       <div class="right">
+        <%= link_to "Johnnsonkp", root_path, class:"hero-text" %>
+       </div>
+
+
+        <!--hamburger menu -->
+        <div id="hamburger-menu">
+            <nav class="right">
+                
+                <div class="circle" id="open">
+                    <button id="open">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                    <ul id="mainMenu">
+                        <li><%= link_to "Home", root_path, class:"menu-li home-li"%></li>
+                    
+                        <li><%= link_to "Portfolio", '', class:"menu-li portfolio"%></li>
+                        <li><%= link_to "About", '', class:"menu-li about"%></li>
+                        <li><%= link_to "Contact", '', class:"menu-li contact"%></li>
+                    </ul> 
+
+                    <div class="far-right">
+                        <%# <div class="social-links"> %>
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/chinonso-john-nkpolukwu-521201138/"><i class="fab fa-linkedin-in fa-1x"></i></a>
+                            </div>
+                            <div class="instagram">
+                                <a href="https://www.instagram.com/johnnsonkp/"><i class="fab fa-instagram fa-1x"></i></a>
+                            </div>
+                            <div class="codepen">
+                                <a href="https://codepen.io/Johnnsonkp"><i class="fab fa-codepen fa-1x"></i></a>
+                            </div>
+                            <div class="github">
+                                <a href="https://github.com/Johnnsonkp"><i class="fab fa-github fa-1x"></i></a>
+                            </div>
+                        <%# </div> %>
+
+                        <%= link_to 'Resume', " ", class:"resume-button" %>
+                            <%# asset_path("resume.pdf"), { :class=>"resume-button" } %>
+                    </div>
+            </nav>
+        </div>
+    </div>
+</section>
