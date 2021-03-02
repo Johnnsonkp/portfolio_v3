@@ -1,13 +1,17 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-$primary-color: #F02A2A;
+// $primary-color: #F02A2A;
+// $primary-color: #f9004d;
+$primary-color: #f6004c;
 $secondary-color: #FFC371;
 $background-1: #101010;
 $background-2: #191919;
 $background-light: #717173;
 $background-light-2: #FFF;
 
+// background-image: linear-gradient(#f6004c 10%,#000 100%);
+// }
 
 #home-header{
     width: 100vw;
@@ -42,8 +46,11 @@ $background-light-2: #FFF;
         padding-left: 10px;
         padding-right: 10px;
     }
-    a:hover{
-        color:$primary-color;
+    li:hover{
+        color:$primary-color !important;
+    }
+    .fab:hover{
+        color:$primary-color !important;
     }
     li{
         list-style: none;
@@ -54,11 +61,11 @@ $background-light-2: #FFF;
         cursor: pointer;
         transition: 0.2s ease-in;
     }
-    li:hover{
-        color:$primary-color;
-        border-bottom: 2px solid $primary-color;
-        padding-bottom: 8px;
-    }
+    // li:hover{
+    //     color:$primary-color;
+    //     border-bottom: 2px solid $primary-color;
+    //     padding-bottom: 8px;
+    // }
     ul{
         display: flex;
         align-items: center;
@@ -177,7 +184,7 @@ $background-light-2: #FFF;
         align-self: center;
         align-items: space-between;
         justify-content: space-between;
-        // padding-top: 50px;
+        padding-left: 3%;
         
     }
     .img{

@@ -1,0 +1,43 @@
+@media screen and (max-width: 800px) {
+
+    // Header section
+    #home-index{
+        width: 100% !important;
+        height: 100%;
+        overflow-x: hidden;
+        flex-wrap: nowrap;
+        // .container{
+        //     width: 98% !important;
+        //     margin: auto !important;
+        // }
+        .middle-text{
+            width: 95% !important;
+            margin: auto !important;
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            background: transparent !important;
+        }
+        .img{
+            padding-bottom: 20px;
+            margin: auto !important;
+            width: 60px !important;
+            height: 60px !important;
+
+        }
+        .inner-text{
+            margin-top: 25px;
+            width: 98%;
+            text-align: center;
+            font-size: 10px !important;
+            // float: left;
+            h1{
+                font-size: 30px !important;
+                line-height: 36px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+}

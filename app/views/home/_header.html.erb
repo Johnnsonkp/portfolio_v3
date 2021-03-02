@@ -16,11 +16,11 @@
                 </div>
 
                     <ul id="mainMenu">
-                        <li><%= link_to "Home", root_path, class:"menu-li home-li"%></li>
+                        <li><%= link_to "Home", root_path, class:"menu-li home-li current"%></li>
                     
-                        <li><%= link_to "Portfolio", '', class:"menu-li portfolio"%></li>
-                        <li><%= link_to "About", '', class:"menu-li about"%></li>
-                        <li><%= link_to "Contact", '', class:"menu-li contact"%></li>
+                        <li><%= link_to "Portfolio", '', class:"menu-li portfolio not-current"%></li>
+                        <li><%= link_to "About", '', class:"menu-li about not-current"%></li>
+                        <li><%= link_to "Contact", '', class:"menu-li contact not-current"%></li>
                     </ul> 
 
                     <div class="far-right">
@@ -39,7 +39,7 @@
                             </div>
                         <%# </div> %>
 
-                        <%= link_to 'Resume', " ", class:"resume-button" %>
+                        <%= link_to 'Resume', asset_path("resume.pdf"), { :class=>"resume-button" }%>
                             <%# asset_path("resume.pdf"), { :class=>"resume-button" } %>
                     </div>
             </nav>
