@@ -47,7 +47,9 @@ window.onload=function(){
     const logo = document.querySelector('.hero-text')
     const resume = document.querySelector('.resume-button')
     const allLinks = document.querySelectorAll('a')
-
+    const projectHeader = document.querySelector('.header-text')
+    const projectText = document.querySelector('.header-p')
+    const projectsBody = document.getElementById('home-projects')
     // To refresh the javascript on the page each time a link is clicked 
     allLinks.forEach((link) => {
         link.addEventListener('click', () =>{
@@ -55,7 +57,7 @@ window.onload=function(){
         })
     })
     
-    const arr = [logo, resume]
+    const arr = [logo, resume, projectHeader, projectText, ]
 
     dayNightBtn.addEventListener('click', () =>{
         
@@ -64,6 +66,7 @@ window.onload=function(){
             
             dayNightBtn.classList.remove('light')
             dayNightBtn.classList.add('dark')
+            projectsBody.classList.add('background-light')
 
             navBar.style.backgroundColor = 'white';
             arr.forEach((item) => {
@@ -80,6 +83,7 @@ window.onload=function(){
         else if(dayNightBtn.classList[0] == "dark") {
             dayNightBtn.classList.remove('dark')
             dayNightBtn.classList.add('light')
+            projectsBody.classList.remove('background-light')
 
             navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
             arr.forEach((item) => {
