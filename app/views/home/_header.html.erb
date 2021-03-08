@@ -18,7 +18,8 @@
                     <ul id="mainMenu">
                         <li><%= link_to "Home", root_path, class:"menu-li home-li current"%></li>
                     
-                        <li><%= link_to "Portfolio", '', class:"menu-li portfolio not-current"%></li>
+                        <li><%= link_to "Portfolio", '#home-projects', class:"menu-li portfolio not-current"%></li> 
+                        <%# <li><a class="menu-li portfolio not-current" href="#home-projects">Portfolio</a></li> %>
                         <li><%= link_to "About", '', class:"menu-li about not-current"%></li>
                         <li><%= link_to "Contact", '', class:"menu-li contact not-current"%></li>
                     </ul> 
@@ -26,16 +27,16 @@
                     <div class="far-right">
                         <%# <div class="social-links"> %>
                             <div class="linkedin">
-                                <a href="https://www.linkedin.com/in/chinonso-john-nkpolukwu-521201138/"><i class="fab fa-linkedin-in fa-1x"></i></a>
+                                <a class="social-links" href="https://www.linkedin.com/in/chinonso-john-nkpolukwu-521201138/"><i class="fab fa-linkedin-in fa-1x"></i></a>
                             </div>
                             <div class="instagram">
-                                <a href="https://www.instagram.com/johnnsonkp/"><i class="fab fa-instagram fa-1x"></i></a>
+                                <a class="social-links" href="https://www.instagram.com/johnnsonkp/"><i class="fab fa-instagram fa-1x"></i></a>
                             </div>
                             <div class="codepen">
-                                <a href="https://codepen.io/Johnnsonkp"><i class="fab fa-codepen fa-1x"></i></a>
+                                <a class="social-links" href="https://codepen.io/Johnnsonkp"><i class="fab fa-codepen fa-1x"></i></a>
                             </div>
                             <div class="github">
-                                <a href="https://github.com/Johnnsonkp"><i class="fab fa-github fa-1x"></i></a>
+                                <a class="social-links" href="https://github.com/Johnnsonkp"><i class="fab fa-github fa-1x"></i></a>
                             </div>
                         <%# </div> %>
 
@@ -46,3 +47,5 @@
         </div>
     </div>
 </section>
+
+
