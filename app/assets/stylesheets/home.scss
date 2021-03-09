@@ -566,16 +566,24 @@ button .cozy-tees-btn a:hover{
 
 
 #home-about{
-    min-height: 110vh;
+    min-height: 130vh;
     width: 100vw;
     overflow-x: hidden;
     background-color: $background-2;
     padding-bottom: 30px;
-    img{
-        width: 55%;
+    // img{
+    //     width: 55%;
+    //     height: 561px;
+    // }
+    .about-me-img{
+        width: 45%;
         height: 561px;
-        // width: 1700px;
-        // margin-bottom: 20px solid $background-2;
+        border: 50px solid $background-1;
+        border-radius: 10px;
+        margin-right: 5%;
+    }
+    .border-color{
+        border-color: #e1e4e8;
     }
     .container{
         width: 90%;
@@ -586,6 +594,7 @@ button .cozy-tees-btn a:hover{
     }
     h1{
         font-size: 55px;
+        font-size: 60px;
         font-weight: bolder;
         display: flex;
         align-self: flex-start;
@@ -600,24 +609,26 @@ button .cozy-tees-btn a:hover{
         font-size: 18px;
         line-height: 1.5;
         margin-top: 0;
+        font-weight: lighter;
     }
 }
 #home-about .right{
     padding-top: 30px;  
+    padding-top: 60px;
     padding-right: 10px;  
 }
 #home-about .mini-header{
-    padding-top: 40px;   
+    padding-top: 35px;   
     display: flex;
     align-self: flex-start; 
 }
 .tech-stack{
-    border: 1px solid $background-light;
-    border:1px solid $background-1;
+    // border: 1px solid $background-light;
+    // border:1px solid $background-1;
     background-color: $background-light;
     background-color: $background-1;
     border-radius: 10px;
-    height: 140px;
+    height: 141px;
     width: 100%;
     padding-top: 40px;
 }
@@ -652,4 +663,8 @@ button .cozy-tees-btn a:hover{
     background-color: #e31b6d;
     background-color: $primary-color;
     border: solid 1px #e31b6d;
+}
+.dev-tools .fas{
+    padding-right: 25px;
+    padding-left: 13px;
 }

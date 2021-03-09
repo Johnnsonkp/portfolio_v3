@@ -67,7 +67,8 @@ window.onload=function(){
     const projectText = document.querySelector('.header-p')
     const projectsBody = document.getElementById('home-projects')
     const aboutPage = document.getElementById('home-about')
-    // const techBox = document.getElementsByClassName('tech-stack')
+    const techBox = document.querySelector('.tech-stack')
+    const aboutImage = document.querySelector('.about-me-img')
 
 
     // To refresh the javascript on the page each time a link is clicked 
@@ -89,7 +90,8 @@ window.onload=function(){
             dayNightBtn.classList.add('dark')
             projectsBody.classList.add('background-light')
             aboutPage.classList.add('background-light-2')
-
+            techBox.classList.add('background-light')
+            aboutImage.classList.add('border-color');
 
             navBar.style.backgroundColor = 'white';
             arr.forEach((item) => {
@@ -108,6 +110,8 @@ window.onload=function(){
             dayNightBtn.classList.add('light')
             projectsBody.classList.remove('background-light')
             aboutPage.classList.remove('background-light-2')
+            techBox.classList.remove('background-light')
+            aboutImage.classList.remove('border-color');
 
             navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
             arr.forEach((item) => {
