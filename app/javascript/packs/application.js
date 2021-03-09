@@ -69,6 +69,7 @@ window.onload=function(){
     const aboutPage = document.getElementById('home-about')
     const techBox = document.querySelector('.tech-stack')
     const aboutImage = document.querySelector('.about-me-img')
+    const contactPage = document.querySelector('#home-contact')
 
 
     // To refresh the javascript on the page each time a link is clicked 
@@ -78,7 +79,7 @@ window.onload=function(){
         })
     })
     
-    const arr = [logo, resume, projectHeader, projectText, aboutPage]
+    const arr = [logo, resume, projectHeader, projectText, aboutPage, contactPage]
 
     dayNightBtn.addEventListener('click', () =>{
         
@@ -92,6 +93,7 @@ window.onload=function(){
             aboutPage.classList.add('background-light-2')
             techBox.classList.add('background-light')
             aboutImage.classList.add('border-color');
+            contactPage.classList.add('background-light')
 
             navBar.style.backgroundColor = 'white';
             arr.forEach((item) => {
@@ -112,6 +114,7 @@ window.onload=function(){
             aboutPage.classList.remove('background-light-2')
             techBox.classList.remove('background-light')
             aboutImage.classList.remove('border-color');
+            contactPage.classList.remove('background-light')
 
             navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
             arr.forEach((item) => {
