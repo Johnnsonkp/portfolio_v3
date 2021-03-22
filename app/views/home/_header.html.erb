@@ -1,27 +1,43 @@
+<div id="status"></div>
 <section id="home-header">
     <div class="container">
        <div class="right">
-        <%= link_to "Johnnsonkp", root_path, class:"hero-text" %>
+        <%= link_to "Johnnsonkp", root_path, class:"hero-text", method: :get %>
        </div>
 
 
         <!--hamburger menu -->
         <div id="hamburger-menu">
             <nav class="right">
-                
-                <div class="circle" id="open">
-                    <button id="open">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
+
+                <i class="menu-logo fas fa-bars fa-2x"></i>
+             
+
 
                     <ul id="mainMenu">
-                        <li><%= link_to "Home", root_path, class:"menu-li home-li current"%></li>
-                    
-                        <li><%= link_to "Portfolio", '#home-projects', class:"menu-li portfolio not-current"%></li> 
-                        <%# <li><a class="menu-li portfolio not-current" href="#home-projects">Portfolio</a></li> %>
-                        <li><%= link_to "About", '', class:"menu-li about not-current"%></li>
-                        <li><%= link_to "Contact", '', class:"menu-li contact not-current"%></li>
+                        <%begin %> 
+                        <%# <li><%= link_to "Home", "#home-index", class:"menu-li home-li current", method: :get, data: { controller: "scroll-to" }</li>  %>
+                        <%end %>
+
+                        <li><a class= "menu-li home-li current" href="#home-index">Home</li> 
+
+                        <%begin %>
+                        <%# <li><%= link_to "Portfolio", '#home-projects', class:"menu-li portfolio not-current", method: :get, data: { controller: "scroll-to" } %></li>
+                        <% end %>
+
+                        <li><a class="menu-li portfolio not-current" href="#home-projects">Portfolio</a></li>
+
+                        <%begin %>
+                        <%# <li><%= link_to "About", '#home-about', class:"menu-li about not-current", method: :get, data: { controller: "scroll-to" }%></li>
+                        <% end %>
+
+                        <li><a class="menu-li about not-current" href="#home-about">About</a></li>
+
+                        <%begin %>
+                        <%# <li><%= link_to "Contact", '#home-contact', class:"menu-li contact not-current", method: :get, data: { controller: "scroll-to" }%></li>
+                        <% end %>
+
+                        <li><a class="menu-li contact not-current" href="#home-contact">Contact</a></li>
                     </ul> 
 
                     <div class="far-right">
@@ -41,11 +57,13 @@
                         <%# </div> %>
 
                         <%= link_to 'Resume', asset_path("resume.pdf"), { :class=>"resume-button" }%>
-                            <%# asset_path("resume.pdf"), { :class=>"resume-button" } %>
+                            <%# asset_path("resume.pdf"), { :class=>"resume-button"  %>
                     </div>
             </nav>
         </div>
     </div>
+
 </section>
+
 
 

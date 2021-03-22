@@ -1,4 +1,16 @@
+<div class="status"></div>
 <section id="home-index">
+
+
+    <ul  class="hamburger-inner display-hidden">
+        <li><%= link_to "Home", root_path, class:"menu-li  "%></li>
+
+        <li><%= link_to "Portfolio", '#home-projects', class:"menu-li"%></li> 
+
+        <li><%= link_to "About", '#home-about', class:"menu-li"%></li>
+        <li><%= link_to "Contact", '#home-contact', class:"menu-li "%></li>
+        <li><%= link_to 'Resume', asset_path("resume.pdf"), { :class=>"resume-button" }%></li>
+    </ul>
 
     <div class="video-container">
         <video src="assets/tech.mp4" type="video/mp4" autoplay muted  loop playsinline>
@@ -8,13 +20,13 @@
     <!-- View my work button -->
     
     <div class="middle-text">
-        <%= link_to "", '', class:"img"%>
+        <%= link_to "", '#home-about', class:"img", method: :get%>
         <div class="inner-text">
             <h1>Hello, I’m <span class="highlight">Chinonso John Nkpolukwu</span>.<br> I’m a full-stack web developer.</h1>
             <br>
             <br>
             <span class="btn project-btn">
-                <span>View my work</span>
+                <%= link_to "View my work", '#home-projects' %>
                 <span class="fas fa-arrow-right"></span>
             </span>
         </div>
@@ -22,9 +34,17 @@
 
     <div class="light" id="day-night-btn"></div>
 
-    <img class="down-arrow down" src="assets/white-arrow.png">
+    <%= link_to image_tag('white-arrow.png', class:'down-arrow down'), '#home-projects', method: :get%>
+    
 
 </section>
+
+
+<%= javascript_pack_tag "hamburger" %>
+<%# <%= javascript_pack_tag "nav" %> 
+<%= javascript_pack_tag "dayNight" %>
+
+
 
 <%= render 'home/projects' %>
 <%= render 'home/about' %>

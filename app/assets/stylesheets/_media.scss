@@ -42,3 +42,192 @@
 
 
 }
+
+@media screen and (max-width: 700px){
+
+    #home-header{
+        width: 100%;
+        z-index: 0;
+        overflow: visible;
+    }
+    // .container{
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+    #mainMenu{
+        display: none !important;
+    }
+    .far-right{
+        display: none !important;
+    }
+    .menu-logo{
+        display: block !important;
+        z-index: 2;
+        // border: 1px solid red;
+        height: 28px;
+        width: 29px;
+        cursor: pointer;
+        justify-content: flex-end;
+        position: absolute;
+        left: 83%;
+        top: 18%;
+    }
+    .hamburger-inner{
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        
+    }
+    .hamburger-inner ul{
+        display: flex;
+        align-items: center;
+        font-weight: 800;
+    }
+    .hamburger-inner li{
+        list-style: none;
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        color: black !important;
+    }
+    #home-index .hamburger-inner{
+        // display: block !important;
+        z-index: 2;
+        background-color: rgba(16, 16, 16, 0.9);
+        text-align: center;
+        float: center;
+        width: 250px;
+        height: 550px;
+        // width: 100vw;
+        padding: 50px;
+        position: absolute;
+        top: 5%;
+        left: 3%;
+
+        border-radius: 10px;
+    }
+    .hamburger-inner li{
+        text-align: center;
+        font-size: 40px;
+        padding-top: 50px;
+        padding-left: 70px;
+        // border: 1px solid red;
+        background-color: black;
+        color: black !important;
+        border-radius: 10px;
+        // padding-right: 50px;
+        // width: 100%;
+    }
+
+    //////////// Projects section ///////////////
+    #home-projects{
+        padding-bottom: 80px;
+        .header{
+            width: 100%;
+        }
+        .header-text{
+            font-size: 45px;
+        }
+        .projects{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .project{
+            width: 100%; 
+            background-color: #191919;
+        }
+        .btn-div{
+            width: 90%;
+        }
+        button{
+            width: 100%;
+        }
+
+
+    }
+    //////////// About section ///////////////   
+    #home-about{
+        margin: 0;
+        overflow-x: hidden;
+        padding-bottom: 50px !important;
+        .about-me-img{
+            width: 72% !important;
+            height: 380px !important;
+            margin-top: 30px;
+            margin-bottom: 90px;
+            // flex: 1;
+            order: 2;
+        }
+        .right{
+            // flex: 0.5;
+            align-items: center;
+            order: 1 !important;
+            margin-top: -20px !important;
+            align-items: center;
+            width: 95%;
+        }
+        h3{
+            border: 1px solid red;
+        }
+        p{
+            text-align: center;
+            font-size: 18px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-y: hidden;
+            width: 45%;
+            margin: auto;
+            
+        }
+        .mini-header, .tech-stack{
+            display: none !important;
+        }
+    }   
+    #home-about .right{
+        padding-top: 15px !important;
+        text-align: center !important;
+        // border: 1px solid red !important;
+        width: 100% !important;
+        margin: auto;
+    } 
+    #home-about .right h1{
+        // border: 1px solid red !important;
+        // width: 100% !important;
+        text-align: center !important;
+        font-size: 45px;
+        margin: auto !important;
+        padding-left: 13%;
+        padding-right: 10%;
+        margin-bottom: 20px !important;
+    }
+    #home-about .right p{
+        // text-align: center;
+        font-size: 18px;
+    }
+
+    //////////// Contact section /////////////// 
+    #home-contact{
+        iframe{
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1800px){
+    #home-header{
+        .container{
+            width: 89% !important;
+            padding-left: 11% !important;
+            padding-right: 6% !important;
+        }
+    }
+}
