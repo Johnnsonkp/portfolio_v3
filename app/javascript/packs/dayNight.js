@@ -80,6 +80,7 @@ window.onload=function(){
 
     function myFunction() {
         
+        // alert('hello')
             // home.classList.add('current')
             // portfolio.classList.remove('current')
             // portfolio.classList.add('not-current')
